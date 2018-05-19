@@ -113,7 +113,7 @@ activate :robots,
   sitemap: 'http://padrinorb.com/sitemap.xml'
 activate :external_pipeline,
   name: :webpack,
-  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  command: build? ? 'npm run build' : './node_modules/webpack/bin/webpack.js --watch -d',
   source: '.tmp/dist',
   latency: 1
 activate :deploy, deploy_method: :git
