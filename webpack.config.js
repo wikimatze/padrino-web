@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var Clean = require('clean-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -31,8 +32,10 @@ module.exports = {
   },
 
   plugins: [
+    new Clean(['.tmp']),
     new ExtractTextPlugin('assets/stylesheets/all.css', {
       allChunks: true,
     }),
   ],
 };
+
