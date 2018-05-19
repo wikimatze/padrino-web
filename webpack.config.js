@@ -1,10 +1,11 @@
-var webpack = require('webpack');
-var path = require('path');
-var Clean = require('clean-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const Clean = require('clean-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   debug: true,
+  devtool: 'source-map',
 
   entry: {
     main: [
