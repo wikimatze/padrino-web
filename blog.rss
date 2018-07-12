@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog - Padrino Ruby Web Framework</title>
+    <description>Blog - Padrino Ruby Web Framework</description>
+    <link>http://padrinorb.com/</link>
+    <item>
+      <title>Padrino 0.14.2 release</title>
+      <link>http://padrinorb.com/blog/padrino-0-14-2/</link>
+      <description>&lt;h2 id="changes"&gt;Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FIX router in non-Padrino applications (&lt;a href="https://github.com/adam12"&gt;@adam12&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a title="#2154" href="https://github.com/padrino/padrino-framework/commit/04f64706613f08f4f5eaddd18afec8ce4d1855d9"&gt;#2154&lt;/a&gt; padrino-admin haml layout (&lt;a title="ujifgc" href="https://github.com/ujifgc"&gt;ujifgc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX Datamapper tasks (&lt;a href="https://github.com/adam12"&gt;@adam12&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a title="#1979" href="https://github.com/padrino/padrino-framework/issues/1979"&gt;#1979&lt;/a&gt; Add a Default Rake Task If Test Framework is Included (&lt;a title="ujifgc" href="https://github.com/ujifgc"&gt;ujifgc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a title="#2150" href="https://github.com/padrino/padrino-framework/issues/2150"&gt;#2150&lt;/a&gt; Project generator silently ignores invalid -a option (&lt;a title="ujifgc" href="https://github.com/ujifgc"&gt;ujifgc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a title="#2152" href="https://github.com/padrino/padrino-framework/issues/2152"&gt;#2152&lt;/a&gt; using open without requiring &lt;code&gt;open-uri&lt;/code&gt; (&lt;a title="ujifgc" href="https://github.com/ujifgc"&gt;ujifgc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a title="#2163" href="https://github.com/padrino/padrino-framework/issues/2163"&gt;#2163&lt;/a&gt; preserve spaces in args of padrino gen (&lt;a title="ujifgc" href="https://github.com/ujifgc"&gt;ujifgc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;NEW &lt;a title="#2161" href="https://github.com/padrino/padrino-framework/pull/2161"&gt;#2161&lt;/a&gt; allow array as tag attribute (&lt;a title="aeris" href="https://github.com/aeris"&gt;aeris&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Update Sequel usage&lt;/li&gt;
+&lt;li&gt;Update &lt;a title="ActiveRecord::Migration usage" href="https://github.com/padrino/padrino-framework/commit/f45566335f0b676d9dc2a8e7de68babc2274ff44"&gt;ActiveRecord::Migration usage&lt;/a&gt; (&lt;a href="https://github.com/adam12"&gt;@adam12&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Tue, 8 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://padrinorb.com/blog/padrino-0-14-2/</guid>
+    </item>
+    <item>
+      <title>Padrino 0.14.1 release</title>
+      <link>http://padrinorb.com/blog/padrino-0-14-1/</link>
+      <description>&lt;h2 id="changes"&gt;Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FIX syntax error in ActiveRecord tasks (&lt;a title="@sue445" href="https://github.com/sue445"&gt;@sue445&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;NEW use hamlit if available in Gemfile&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>http://padrinorb.com/blog/padrino-0-14-1/</guid>
+    </item>
+    <item>
+      <title>Padrino 0.14.0.2 - small bug fixes</title>
+      <link>http://padrinorb.com/blog/padrino-0-14-0-2/</link>
+      <description>&lt;h2 id="bug-fixes"&gt;Bug Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/issues/2132"&gt;#2132&lt;/a&gt; use Sinatra2 IndifferentHash if available&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Thu, 25 May 2017 00:00:00 +0000</pubDate>
+      <guid>http://padrinorb.com/blog/padrino-0-14-0-2/</guid>
+    </item>
+    <item>
+      <title>Padrino 0.14.0.1 - small bug fixes</title>
+      <link>http://padrinorb.com/blog/padrino-0-14-0-1/</link>
+      <description>&lt;h2 id="bug-fixes"&gt;Bug Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2118"&gt;#2118&lt;/a&gt; allow Logger without Extensions&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2128"&gt;#2128&lt;/a&gt; do not render default layout in partials&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
+      <guid>http://padrinorb.com/blog/padrino-0-14-0-1/</guid>
+    </item>
+    <item>
+      <title>Padrino 0.14.0 - cascading option for Rack applications, no ruby default encodings, erubi support, bug fixes</title>
+      <link>http://padrinorb.com/blog/padrino-0-14-0/</link>
+      <description>&lt;h2 id="enable-cascading-with-rack-application"&gt;Enable cascading with Rack application&lt;/h2&gt;
+&lt;p&gt;In prior versions of Padrino, the core router would cascade from one application to the next on a 404 response even when the application explicitly specified &lt;code&gt;cascade: false&lt;/code&gt;. With this release, this has been corrected and Padrino will not cascade even if the specified Rack application returns 404.&lt;/p&gt;
+&lt;pre class="syntax ruby"&gt;&lt;code&gt;&lt;span class="no"&gt;Padrino&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;mount&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'RackApp'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;cascade: &lt;/span&gt;&lt;span class="kp"&gt;false&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nf"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/api'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# this will not be cascaded even if returning 404.&lt;/span&gt;
+&lt;span class="no"&gt;Padrino&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;mount&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'PadrinoApp::App'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;app_file: &lt;/span&gt;&lt;span class="no"&gt;Padrino&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;root&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'app/app.rb'&lt;/span&gt;&lt;span class="p"&gt;)).&lt;/span&gt;&lt;span class="nf"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="stop-managing-ruby-default-encodings"&gt;Stop managing Ruby default encodings&lt;/h2&gt;
+&lt;p&gt;Default &lt;code&gt;Encoding.default_internal&lt;/code&gt; is now &lt;code&gt;nil&lt;/code&gt; (Ruby default) instead of &lt;code&gt;UTF-8&lt;/code&gt; (&lt;code&gt;Padrino &amp;lt; 0.14&lt;/code&gt; default)&lt;/p&gt;
+&lt;h2 id="erubi-support"&gt;Erubi support&lt;/h2&gt;
+&lt;p&gt;Padrino has now &lt;a title="erubi support" href="https://github.com/jeremyevans/erubi"&gt;Erubi support&lt;/a&gt;. Erubi is a ERB template engine
+for Ruby. The most significant changes are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Handles postfix conditionals when using escaping (e.g. &amp;lt;%= foo if bar %&amp;gt;)&lt;/li&gt;
+&lt;li&gt;Supports frozen&lt;em&gt;string&lt;/em&gt;literal: true in templates via :freeze option&lt;/li&gt;
+&lt;li&gt;Automatically freezes strings for template text when ruby optimizes it (on ruby 2.1+)&lt;/li&gt;
+&lt;li&gt;Has 6x faster escaping on ruby 2.3+ by using cgi/escape&lt;/li&gt;
+&lt;li&gt;Has 86% smaller memory footprint&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More details can be found under &lt;a title="erubi" href="https://github.com/jeremyevans/erubi#erubi"&gt;erubi&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;All the credit for the implementation goes to &lt;a href="https://github.com/padrino/padrino-framework/pull/2090"&gt;@adam12&lt;/a&gt; - thank
+you so much for your hard work.&lt;/p&gt;
+&lt;h2 id="bug-fixes-and-miscellaneous-things"&gt;Bug Fixes and Miscellaneous Things&lt;/h2&gt;
+&lt;p&gt;There are several bug fixes and other updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Removal of requiring &lt;code&gt;activesupport&lt;/code&gt; - see &lt;a title="details" href="https://github.com/padrino/padrino-framework/issues/1971#issuecomment-257792761"&gt;details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Removal of &lt;code&gt;lib&lt;/code&gt; from &lt;code&gt;$LOAD_PATH&lt;/code&gt; - see &lt;a title="details" href="https://github.com/padrino/padrino-framework/commit/365f23b5dcf69d72bfab7fb6dcbf4c82fe5d7945"&gt;details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2105"&gt;#2105&lt;/a&gt; run bundle with &lt;code&gt;--binstubs&lt;/code&gt; on &lt;code&gt;-b&lt;/code&gt; switch (&lt;a href="https://github.com/adam12"&gt;@adam12&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2097"&gt;#2097&lt;/a&gt; use exe folder for application executables (&lt;a href="https://github.com/adam12"&gt;@adam12&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2109"&gt;#2109&lt;/a&gt; change the format of session_id for Padrino Admin AccessControl (thanks &lt;a href="https://github.com/fnordfish"&gt;@fnordfish&lt;/a&gt; for reporting this problem)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2111"&gt;#2111&lt;/a&gt; disallow conflicting project names (thanks &lt;a href="https://github.com/leemour"&gt;@leemour&lt;/a&gt; for reporting this problem)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2113"&gt;#2113&lt;/a&gt; properly override default values in route definitions if parameter is present (&lt;a href="https://github.com/fidalgo"&gt;@fidalgo&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2116"&gt;#2116&lt;/a&gt; fix plugin list &lt;code&gt;padrino g plugin -l&lt;/code&gt; (&lt;a href="https://github.com/fnordfish"&gt;@fnordfish&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2119"&gt;#2119&lt;/a&gt; add rake gem tasks to gem project Rakefile (&lt;a href="https://github.com/grasp"&gt;@grasp&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2125"&gt;#2125&lt;/a&gt; do not load in cycle files excluded from reloading (thanks &lt;a href="https://github.com/fnordfish"&gt;@fnordfish&lt;/a&gt; for reporting this problem)&lt;/li&gt;
+&lt;li&gt;FIX handle nil database passwords for &lt;code&gt;create_db&lt;/code&gt; and &lt;code&gt;drop_db&lt;/code&gt; (&lt;a href="https://github.com/phallstrom"&gt;@phallstrom&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX lock &lt;code&gt;rake &amp;lt; 11.0&lt;/code&gt; to avoid &lt;code&gt;last_comment&lt;/code&gt; error (&lt;a href="https://github.com/namusyaka"&gt;@namusyaka&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
+      <guid>http://padrinorb.com/blog/padrino-0-14-0/</guid>
+    </item>
+    <item>
+      <title>Padrino 0.13.3.2 - small fixes, documentation cleanup, enable sqlite's file to deep tree of subdirectories, caching the content_type mime type</title>
+      <link>http://padrinorb.com/blog/padrino-0-13-3-2/</link>
+      <description>&lt;p&gt;Padrino 0.13.3.2 was shipped in September 2016. This version contains small fixes, documentation cleanup, enable sqlite&amp;#39;s file to deep tree of subdirectories, as well as fixing an issue with not caching the content_type mime type.&lt;/p&gt;
+&lt;h2 id="be-able-to-create-sqlite-39-s-file-to-deep-tree-of-subdirectories"&gt;Be able to create sqlite&amp;#39;s file to deep tree of subdirectories.&lt;/h2&gt;
+&lt;p&gt;&lt;a title="@karakava" href="https://github.com/kkarakawa"&gt;@karakava&lt;/a&gt; was so nice to make the following possible when working with
+&lt;a title="SQLite" href="https://sqlite.org/"&gt;SQLite&lt;/a&gt;:&lt;/p&gt;
+&lt;pre class="syntax ruby"&gt;&lt;code&gt;&lt;span class="no"&gt;ActiveRecord&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Base&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;configuration&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="ss"&gt;:development&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+  &lt;span class="ss"&gt;:adapter&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;'sqlite3'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+  &lt;span class="ss"&gt;:database&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="no"&gt;Padrino&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;root&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'db'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;'development/1/sample.db'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="bug-fixes-and-miscellaneous-things"&gt;Bug Fixes and Miscellaneous Things&lt;/h2&gt;
+&lt;p&gt;There are several bug fixes and other updates:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FIX fix padrinorb.com links in several rdocs (&lt;a title="@karakava" href="https://github.com/kkarakawa"&gt;@karakava)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/issues/2075"&gt;#2075&lt;/a&gt; cache actual content_type mime type (&lt;a href="https://github.com/ujifgc"&gt;@ujifgc&lt;/a&gt;) - thanks &lt;a title="davinciRor" href="https://github.com/davinciRor"&gt;davinciRor&lt;/a&gt; for reporing this issue&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/issues/2076"&gt;#2076&lt;/a&gt; retire webrat and nokogiri from helper tests and using now &lt;a title="oga" href="https://github.com/YorickPeterse/oga"&gt;oga&lt;/a&gt; (&lt;a href="https://github.com/ujifgc"&gt;@ujifgc&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/issues/2081"&gt;#2081&lt;/a&gt; remove -i option from pg_dump command (&lt;a href="https://github.com/dfens"&gt;@dfens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/issues/2083"&gt;#2083&lt;/a&gt; remove -i option from pg_dump command (&lt;a href="https://github.com/dfens"&gt;@dfens&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/padrino/padrino-framework/commit/b8387602922cd97afeb9cd00be9428244d47a076"&gt;FIX a typo in admin generation command&lt;/a&gt; when no valid render engine is being used&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Wed, 2 Nov 2016 00:00:00 +0000</pubDate>
+      <guid>http://padrinorb.com/blog/padrino-0-13-3-2/</guid>
+    </item>
+  </channel>
+</rss>
