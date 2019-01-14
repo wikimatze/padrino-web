@@ -5,6 +5,21 @@
     <description>Blog - Padrino Ruby Web Framework</description>
     <link>http://padrinorb.com/</link>
     <item>
+      <title>Padrino 0.14.4 release</title>
+      <link>http://padrinorb.com/blog/padrino-0-14-4/</link>
+      <description>&lt;h2 id="changes"&gt;Changes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2177" title="#2177"&gt;#2177&lt;/a&gt; regexp routes and trailing slashes (&lt;a href="https://github.com/pdlug" title="pdlug"&gt;pdlug&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2182" title="#2182"&gt;#2182&lt;/a&gt; NoMethodError on &lt;code&gt;ar&lt;/code&gt; tasks with activerecord v5.2.0 (&lt;a href="https://github.com/sue445" title="sue445"&gt;sue445&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2185" title="#2185"&gt;#2185&lt;/a&gt; self.authenticate method in mongoid.rb.tt (&lt;a href="https://github.com/LarryFransson" title="LarryFransson"&gt;LarryFransson&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2179" title="#2179"&gt;#2179&lt;/a&gt; Deprecate safe_level of &lt;code&gt;ERB.new&lt;/code&gt; in Ruby 2.6 (&lt;a href="https://github.com/koic" title="koic"&gt;koic&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2193" title="#2193"&gt;#2193&lt;/a&gt; nested require_dependencies (&lt;a href="https://github.com/genkami" title="genkami"&gt;genkami&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://padrinorb.com/blog/padrino-0-14-4/</guid>
+    </item>
+    <item>
       <title>Padrino 0.14.3 release</title>
       <link>http://padrinorb.com/blog/padrino-0-14-3/</link>
       <description>&lt;h2 id="changes"&gt;Changes&lt;/h2&gt;
@@ -70,52 +85,6 @@
 </description>
       <pubDate>Wed, 17 May 2017 00:00:00 +0000</pubDate>
       <guid>http://padrinorb.com/blog/padrino-0-14-0-1/</guid>
-    </item>
-    <item>
-      <title>Padrino 0.14.0 - cascading option for Rack applications, no ruby default encodings, erubi support, bug fixes</title>
-      <link>http://padrinorb.com/blog/padrino-0-14-0/</link>
-      <description>&lt;h2 id="enable-cascading-with-rack-application"&gt;Enable cascading with Rack application&lt;/h2&gt;
-&lt;p&gt;In prior versions of Padrino, the core router would cascade from one application to the next on a 404 response even when the application explicitly specified &lt;code&gt;cascade: false&lt;/code&gt;. With this release, this has been corrected and Padrino will not cascade even if the specified Rack application returns 404.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="syntax ruby"&gt;&lt;code&gt;&lt;span class="no"&gt;Padrino&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;mount&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'RackApp'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;cascade: &lt;/span&gt;&lt;span class="kp"&gt;false&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nf"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/api'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="c1"&gt;# this will not be cascaded even if returning 404.&lt;/span&gt;
-&lt;span class="no"&gt;Padrino&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;mount&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'PadrinoApp::App'&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;app_file: &lt;/span&gt;&lt;span class="no"&gt;Padrino&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;root&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'app/app.rb'&lt;/span&gt;&lt;span class="p"&gt;)).&lt;/span&gt;&lt;span class="nf"&gt;to&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;'/'&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="stop-managing-ruby-default-encodings"&gt;Stop managing Ruby default encodings&lt;/h2&gt;
-&lt;p&gt;Default &lt;code&gt;Encoding.default_internal&lt;/code&gt; is now &lt;code&gt;nil&lt;/code&gt; (Ruby default) instead of &lt;code&gt;UTF-8&lt;/code&gt; (&lt;code&gt;Padrino &amp;lt; 0.14&lt;/code&gt; default)&lt;/p&gt;
-&lt;h2 id="erubi-support"&gt;Erubi support&lt;/h2&gt;
-&lt;p&gt;Padrino has now &lt;a href="https://github.com/jeremyevans/erubi" title="erubi support"&gt;Erubi support&lt;/a&gt;. Erubi is a ERB template engine
-for Ruby. The most significant changes are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Handles postfix conditionals when using escaping (e.g. &amp;lt;%= foo if bar %&amp;gt;)&lt;/li&gt;
-&lt;li&gt;Supports frozen&lt;em&gt;string&lt;/em&gt;literal: true in templates via :freeze option&lt;/li&gt;
-&lt;li&gt;Automatically freezes strings for template text when ruby optimizes it (on ruby 2.1+)&lt;/li&gt;
-&lt;li&gt;Has 6x faster escaping on ruby 2.3+ by using cgi/escape&lt;/li&gt;
-&lt;li&gt;Has 86% smaller memory footprint&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;More details can be found under &lt;a href="https://github.com/jeremyevans/erubi#erubi" title="erubi"&gt;erubi&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;All the credit for the implementation goes to &lt;a href="https://github.com/padrino/padrino-framework/pull/2090"&gt;@adam12&lt;/a&gt; - thank
-you so much for your hard work.&lt;/p&gt;
-&lt;h2 id="bug-fixes-and-miscellaneous-things"&gt;Bug Fixes and Miscellaneous Things&lt;/h2&gt;
-&lt;p&gt;There are several bug fixes and other updates:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Removal of requiring &lt;code&gt;activesupport&lt;/code&gt; - see &lt;a href="https://github.com/padrino/padrino-framework/issues/1971#issuecomment-257792761" title="details"&gt;details&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Removal of &lt;code&gt;lib&lt;/code&gt; from &lt;code&gt;$LOAD_PATH&lt;/code&gt; - see &lt;a href="https://github.com/padrino/padrino-framework/commit/365f23b5dcf69d72bfab7fb6dcbf4c82fe5d7945" title="details"&gt;details&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2105"&gt;#2105&lt;/a&gt; run bundle with &lt;code&gt;--binstubs&lt;/code&gt; on &lt;code&gt;-b&lt;/code&gt; switch (&lt;a href="https://github.com/adam12"&gt;@adam12&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2097"&gt;#2097&lt;/a&gt; use exe folder for application executables (&lt;a href="https://github.com/adam12"&gt;@adam12&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2109"&gt;#2109&lt;/a&gt; change the format of session_id for Padrino Admin AccessControl (thanks &lt;a href="https://github.com/fnordfish"&gt;@fnordfish&lt;/a&gt; for reporting this problem)&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2111"&gt;#2111&lt;/a&gt; disallow conflicting project names (thanks &lt;a href="https://github.com/leemour"&gt;@leemour&lt;/a&gt; for reporting this problem)&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2113"&gt;#2113&lt;/a&gt; properly override default values in route definitions if parameter is present (&lt;a href="https://github.com/fidalgo"&gt;@fidalgo&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2116"&gt;#2116&lt;/a&gt; fix plugin list &lt;code&gt;padrino g plugin -l&lt;/code&gt; (&lt;a href="https://github.com/fnordfish"&gt;@fnordfish&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2119"&gt;#2119&lt;/a&gt; add rake gem tasks to gem project Rakefile (&lt;a href="https://github.com/grasp"&gt;@grasp&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FIX &lt;a href="https://github.com/padrino/padrino-framework/pull/2125"&gt;#2125&lt;/a&gt; do not load in cycle files excluded from reloading (thanks &lt;a href="https://github.com/fnordfish"&gt;@fnordfish&lt;/a&gt; for reporting this problem)&lt;/li&gt;
-&lt;li&gt;FIX handle nil database passwords for &lt;code&gt;create_db&lt;/code&gt; and &lt;code&gt;drop_db&lt;/code&gt; (&lt;a href="https://github.com/phallstrom"&gt;@phallstrom&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;FIX lock &lt;code&gt;rake &amp;lt; 11.0&lt;/code&gt; to avoid &lt;code&gt;last_comment&lt;/code&gt; error (&lt;a href="https://github.com/namusyaka"&gt;@namusyaka&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
-      <guid>http://padrinorb.com/blog/padrino-0-14-0/</guid>
     </item>
   </channel>
 </rss>

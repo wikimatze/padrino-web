@@ -415,6 +415,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://padrinorb.com/blog/padrino-0-14-4/</loc>
+    <lastmod>2019-01-14T20:08:44+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://padrinorb.com/guides/04_generators/07_mailers/</loc>
     <lastmod>2017-05-25T06:47:28+02:00</lastmod>
     <changefreq>weekly</changefreq>
